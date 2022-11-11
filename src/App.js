@@ -28,13 +28,13 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/createCharacter" element={<CreateCharacterPage />} />
           <Route path="/createPatch" element={<CreatePatchPage />} />
-          <Route path="/viewCharacter" element={<ViewCharacterPage />} />
+          <Route path="/viewCharacter/:id" element={<ViewCharacterPage />} />
           <Route path="/viewCharacters" element={<ViewCharactersPage />} />
-          <Route path="/viewPatch" element={<ViewPatchPage />} />
+          <Route path="/viewPatch/:id" element={<ViewPatchPage />} />
           <Route path="/viewPatches" element={<ViewPatchesPage />} />
-          <Route path="/viewPatchResults" element={<ViewPatchResultsPage />} />
-          <Route path="/modifyPatch" element={<ModifyPatchPage />} />
-          <Route path="/patchVoter" element={<PatchVoterPage />} />
+          <Route path="/viewPatchResults/:id" element={<ViewPatchResultsPage />} />
+          <Route path="/modifyPatch/:id" element={<ModifyPatchPage />} />
+          <Route path="/patchVoter/:id" element={<PatchVoterPage />} />
         </Routes>
       </div>
     </div>
